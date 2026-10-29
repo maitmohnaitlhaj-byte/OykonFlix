@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="توجيه طالب — الاستشارة والتوجيه المدرسي والجامعي بالمغرب، ومواكبة التسجيل في المدارس والجامعات.">
+  <title>توجيه طالب | الاستشارة والتوجيه المدرسي والجامعي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#accueil"><img src="assets/logo.jpg" alt="توجيه طالب"></a>
+  <nav>
+    <a href="#accueil">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#ecoles">المؤسسات</a>
+    <a href="#orientation">كيف نساعدك؟</a>
+    <a href="#apropos">من نحن</a>
+    <a class="nav-cta" href="#contact">اطلب التوجيه</a>
+  </nav>
+  <button class="menu" aria-label="القائمة">☰</button>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">🇲🇦 الدراسة في المغرب</p>
+    <h1>مستقبلك يبدأ من <span>الاختيار الصحيح.</span></h1>
+    <p class="lead">توجيه طالب كيساعد التلاميذ والطلبة والآباء يفهمو الاختيارات المتاحة، يختارو التخصص والمؤسسة المناسبة، ويحضرو ملف الترشيح والتسجيل خطوة بخطوة.</p>
+    <div class="actions">
+      <a class="btn primary" href="#contact">ابدأ التوجيه ديالك ←</a>
+      <a class="btn ghost" href="#ecoles">شوف المؤسسات</a>
+    </div>
+    <div class="stats">
+      <div><strong>🎓</strong><small>توجيه مدرسي<br>وجامعي</small></div>
+      <div><strong>🏫</strong><small>مدارس وجامعات<br>عامة وخاصة</small></div>
+      <div><strong>📋</strong><small>مواكبة الترشيح<br>والتسجيل</small></div>
+    </div>
+  </div>
+  <div class="hero-card">
+    <img src="assets/logo.jpg" alt="شعار توجيه طالب">
+    <div class="floating">الاستشارة والتوجيه<br><b>المدرسي والجامعي</b></div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-head">
+    <p class="eyebrow">01 — خدماتنا</p>
+    <h2>ماشي غير كنقولو ليك فين تقرا… كنعاونوك تختار علاش وفين وكيفاش.</h2>
+    <p>خدمة واضحة للتلميذ والطالب، ومعلومة مفهومة للآباء والأمهات.</p>
+  </div>
+  <div class="cards">
+    <article><div class="icon">🎯</div><h3>التوجيه الدراسي</h3><p>كنحللو المستوى، شعبة الباك، الميولات والأهداف باش نحددو المسارات المناسبة.</p></article>
+    <article><div class="icon">🏫</div><h3>اختيار المؤسسة</h3><p>كنقارنو بين المدارس والجامعات حسب التخصص، المدينة، شروط الولوج والميزانية.</p></article>
+    <article><div class="icon">📝</div><h3>الترشيح والتسجيل</h3><p>كنواكبو الطالب في فهم مراحل التسجيل، الوثائق، المنصات وآجال الترشيح.</p></article>
+    <article><div class="icon">👨‍👩‍👦</div><h3>مواكبة الطالب والأسرة</h3><p>كنشرحو الخيارات بطريقة بسيطة باش الطالب والوالدين ياخدو القرار على أساس واضح.</p></article>
+  </div>
+</section>
+
+<section id="ecoles" class="section schools-section">
+  <div class="section-head">
+    <p class="eyebrow">02 — المؤسسات التي نوجّه إليها</p>
+    <h2>جامعات ومدارس يمكننا مواكبة طلبات التوجيه والترشيح والتسجيل فيها.</h2>
+    <p>هاد اللائحة هي نقطة انطلاق، وكنزيدو المؤسسات والتخصصات حسب عروض كل موسم دراسي.</p>
+  </div>
+
+  <div class="filters" role="tablist" aria-label="تصنيف المؤسسات">
+    <button class="filter active" data-filter="all">الكل</button>
+    <button class="filter" data-filter="public">عمومي</button>
+    <button class="filter" data-filter="private">خاص</button>
+    <button class="filter" data-filter="engineering">هندسة وتقني</button>
+    <button class="filter" data-filter="business">تجارة وتسيير</button>
+    <button class="filter" data-filter="health">صحة</button>
+  </div>
+
+  <div class="schools-grid" id="schoolsGrid">
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">🏛️</div>
+      <h3>ENA</h3><h4>المدارس الوطنية للهندسة المعمارية</h4>
+      <p>مسار الهندسة المعمارية، مع مدارس في عدة مدن بالمغرب حسب العرض السنوي.</p>
+      <div class="school-actions"><a href="https://concoursena.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">⚙️</div>
+      <h3>ENSA</h3><h4>المدارس الوطنية للعلوم التطبيقية</h4>
+      <p>تكوينات هندسية وعلمية وتكنولوجية، والولوج يتغير حسب المستوى والمسلك والموسم.</p>
+      <div class="school-actions"><a href="https://www.ensa.ac.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">🔧</div>
+      <h3>ENSAM</h3><h4>المدرسة الوطنية العليا للفنون والمهن</h4>
+      <p>مسارات مرتبطة بالهندسة والصناعة والتكنولوجيا، مع مؤسسات منها ENSAM مكناس.</p>
+      <div class="school-actions"><a href="https://www.ensam-umi.ac.ma" target="_blank" rel="noopener">ENSAM مكناس ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="private engineering business health">
+      <span class="tag private">خاص</span><div class="school-icon">🌱</div>
+      <h3>UM6P</h3><h4>جامعة محمد السادس متعددة التخصصات التقنية</h4>
+      <p>برامج ما بعد الباك، الهندسة، الصحة، الاقتصاد والتسيير وغيرها حسب العرض المفتوح.</p>
+      <div class="school-actions"><a href="https://www.um6p.ma/fr/inscription/admissions" target="_blank" rel="noopener">القبول الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public business">
+      <span class="tag public">عمومي</span><div class="school-icon">📊</div>
+      <h3>ENCG</h3><h4>المدارس الوطنية للتجارة والتسيير</h4>
+      <p>تكوينات في التجارة، التسيير، المالية، التسويق ومجالات الأعمال حسب المؤسسة والمسلك.</p>
+      <div class="school-actions"><a href="https://www.enssup.gov.ma" target="_blank" rel="noopener">بوابة التعليم العالي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public business">
+      <span class="tag public">عمومي</span><div class="school-icon">💼</div>
+      <h3>ISCAE</h3><h4>المعهد العالي للتجارة وإدارة المقاولات</h4>
+      <p>مسارات متخصصة في الإدارة، التجارة، المالية والتدبير، مع شروط ولوج حسب البرنامج.</p>
+      <div class="school-actions"><a href="https://www.groupeiscae.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">🔬</div>
+      <h3>FST</h3><h4>كليات العلوم والتقنيات</h4>
+      <p>مسارات علمية وتقنية ومهنية، مع عروض تختلف من كلية إلى أخرى.</p>
+      <div class="school-actions"><a href="https://www.enssup.gov.ma" target="_blank" rel="noopener">بوابة التعليم العالي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">🧪</div>
+      <h3>EST</h3><h4>المدارس العليا للتكنولوجيا</h4>
+      <p>تكوينات تطبيقية وتقنية ومهنية، مناسبة لمسارات مختلفة بعد الباك حسب الشروط.</p>
+      <div class="school-actions"><a href="https://www.enssup.gov.ma" target="_blank" rel="noopener">بوابة التعليم العالي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">🌾</div>
+      <h3>IAV Hassan II</h3><h4>معهد الحسن الثاني للزراعة والبيطرة</h4>
+      <p>مسارات مرتبطة بالزراعة، الهندسة القروية، البيطرة ومجالات العلوم الحيوية حسب البرامج.</p>
+      <div class="school-actions"><a href="https://www.iav.ac.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public health">
+      <span class="tag public">عمومي</span><div class="school-icon">🩺</div>
+      <h3>ISPITS</h3><h4>المعاهد العليا للمهن التمريضية وتقنيات الصحة</h4>
+      <p>تكوينات في مهن التمريض وتقنيات الصحة، مع شروط ولوج ومواعيد حسب الإعلان الرسمي.</p>
+      <div class="school-actions"><a href="https://sante.gov.ma" target="_blank" rel="noopener">وزارة الصحة ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="public engineering">
+      <span class="tag public">عمومي</span><div class="school-icon">📚</div>
+      <h3>CPGE</h3><h4>الأقسام التحضيرية للمدارس العليا</h4>
+      <p>مسار تحضيري قوي لولوج مدارس عليا وهندسية، والولوج يخضع لشروط وانتقاء حسب السنة.</p>
+      <div class="school-actions"><a href="https://www.enssup.gov.ma" target="_blank" rel="noopener">بوابة التعليم العالي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="private engineering">
+      <span class="tag private">خاص</span><div class="school-icon">💻</div>
+      <h3>EMSI</h3><h4>المدرسة المغربية لعلوم المهندس</h4>
+      <p>تكوينات هندسية وتقنية، مع تخصصات ومسارات متعددة حسب البرنامج والحرم.</p>
+      <div class="school-actions"><a href="https://emsi.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="private engineering business">
+      <span class="tag private">خاص</span><div class="school-icon">🏢</div>
+      <h3>UIR</h3><h4>الجامعة الدولية للرباط</h4>
+      <p>جامعة متعددة التخصصات تشمل الهندسة، التسيير، القانون ومجالات أخرى حسب البرامج.</p>
+      <div class="school-actions"><a href="https://www.uir.ac.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+
+    <article class="school-card" data-type="private engineering business">
+      <span class="tag private">خاص</span><div class="school-icon">🎓</div>
+      <h3>UPM</h3><h4>Université Privée de Marrakech</h4>
+      <p>تكوينات متعددة في مجالات منها الهندسة، التسيير، الصحة والسياحة حسب العرض.</p>
+      <div class="school-actions"><a href="https://upm.ac.ma" target="_blank" rel="noopener">الموقع الرسمي ↗</a><a class="mini-cta" href="#contact">اطلب التوجيه</a></div>
+    </article>
+  </div>
+
+  <p class="source-note">ملاحظة: شروط الولوج، التخصصات، المصاريف، عدد المقاعد وآجال الترشيح كتتبدل حسب السنة والمؤسسة. قبل أي تسجيل نهائي، كنراجعو الإعلان الرسمي ديال السنة المعنية.</p>
+</section>
+
+<section id="orientation" class="dark-section">
+  <div class="section-head">
+    <p class="eyebrow gold">03 — كيفاش كنخدمو معاك؟</p>
+    <h2>من الحيرة حتى <span>الاختيار والتسجيل.</span></h2>
+  </div>
+  <div class="path">
+    <div><b>01</b><h3>كنفهمو البروفايل</h3><p>المستوى، شعبة الباك، النقط والقدرات.</p></div>
+    <div><b>02</b><h3>كنحددو الهدف</h3><p>المجال والتخصص والمهنة المستقبلية.</p></div>
+    <div><b>03</b><h3>كنقارنو الاختيارات</h3><p>المؤسسات، المدن، الشروط والتكاليف.</p></div>
+    <div><b>04</b><h3>كنواكبو الترشيح</h3><p>الوثائق، المنصة، الملف ومراحل التسجيل.</p></div>
+  </div>
+</section>
+
+<section id="apropos" class="section about">
+  <div>
+    <p class="eyebrow">04 — توجيه طالب</p>
+    <h2>منصة مغربية للتوجيه والاستشارة الدراسية والجامعية.</h2>
+  </div>
+  <div class="about-copy">
+    <p>الهدف ديالنا هو نخليو التوجيه مفهوم للطالب وللأسرة، ونقربو المعلومة حول المدارس والجامعات والتخصصات بطريقة منظمة.</p>
+    <p>كنساعدو الطالب يجاوب على الأسئلة الأساسية: شنو نقدر نقرا؟ فين؟ شنو شروط الولوج؟ شحال التكلفة؟ وفاش خاصني نسجل؟</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-head">
+    <p class="eyebrow gold">05 — طلب التوجيه والتسجيل</p>
+    <h2>خلي معلوماتك ونتاصلو معاك.</h2>
+    <p>عمر الفورم، وغادي يتواصل معاك فريق توجيه طالب باش يفهم المشروع الدراسي ديالك ويوجهك للخيارات المناسبة.</p>
+  </div>
+
+  <form id="leadForm">
+    <div class="grid">
+      <label>الاسم الكامل<input required name="name" placeholder="الاسم الكامل"></label>
+      <label>رقم واتساب<input required name="whatsapp" placeholder="06 XX XX XX XX"></label>
+      <label>مدينة السكن<select name="city"><option>الدار البيضاء</option><option>الرباط</option><option>فاس</option><option>مراكش</option><option>طنجة</option><option>أكادير</option><option>وجدة</option><option>مكناس</option><option>مدينة أخرى</option></select></label>
+      <label>المستوى الدراسي<select name="level"><option>الثانية باكالوريا</option><option>حاصل على الباكالوريا</option><option>باك+1</option><option>باك+2</option><option>باك+3</option><option>باك+4</option><option>باك+5</option><option>مستوى آخر</option></select></label>
+      <label>شعبة الباك<select name="bac"><option>العلوم الفيزيائية</option><option>العلوم الرياضية</option><option>علوم الحياة والأرض</option><option>الاقتصاد والتدبير</option><option>الآداب والعلوم الإنسانية</option><option>العلوم والتكنولوجيات</option><option>باك مهني</option><option>أخرى</option></select></label>
+      <label>المجال المرغوب<select name="formation"><option>الهندسة</option><option>الطب والصحة</option><option>التجارة والتسيير</option><option>المالية والمحاسبة</option><option>المعلوميات والذكاء الاصطناعي</option><option>الهندسة المعمارية</option><option>القانون</option><option>التواصل</option><option>السياحة والفندقة</option><option>الفلاحة</option><option>التعليم</option><option>BTS والتكوين المهني</option><option>مازال ماعرفتش</option></select></label>
+      <label>نوع المؤسسة<select name="type"><option>جامعة أو مدرسة عمومية</option><option>مدرسة أو جامعة خاصة</option><option>بجوج بغيت نقارن</option><option>مازال ماعرفتش</option></select></label>
+      <label>المدينة المرغوبة للدراسة<select name="studycity"><option>الدار البيضاء</option><option>الرباط</option><option>فاس</option><option>مراكش</option><option>طنجة</option><option>أكادير</option><option>وجدة</option><option>مكناس</option><option>ماشي مهمة</option></select></label>
+    </div>
+
+    <label>شنو هو الاحتياج الرئيسي ديالك؟
+      <select name="need">
+        <option>بغيت نعرف شنو نقدر نقرا</option>
+        <option>بغيت نختار التخصص</option>
+        <option>بغيت نعرف شروط الولوج</option>
+        <option>بغيت نعرف المصاريف</option>
+        <option>بغيت ندير الترشيح أو التسجيل</option>
+        <option>بغيت نقارن بين المدارس</option>
+        <option>مازال ماعرفتش</option>
+      </select>
+    </label>
+
+    <label class="check">
+      <input type="checkbox" required>
+      كنوافق أن تستعمل توجيه طالب هاد المعلومات باش يتاصل بيا بخصوص مشروعي الدراسي.
+    </label>
+
+    <button class="btn primary submit" type="submit">إرسال طلب التوجيه ←</button>
+    <p id="success" class="success" hidden>شكراً! توصلنا بطلبك. غادي يتاصل معاك فريق توجيه طالب قريباً. 🇲🇦🎓</p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <img src="assets/logo.jpg" alt="توجيه طالب">
+  <p>© 2026 توجيه طالب — الاستشارة والتوجيه المدرسي والجامعي</p>
+  <div><a href="#accueil">الرئيسية</a><a href="#ecoles">المؤسسات</a><a href="#contact">التواصل</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
